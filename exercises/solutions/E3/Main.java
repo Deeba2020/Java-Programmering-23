@@ -17,6 +17,7 @@ public class Main {
         airbus.noseToTailLength_meters = 72.7;
         airbus.model = "Airbus A380";
 
+        
         Airplane anotherBoeing = airport.boeing;
 
         System.out.println("There's also two planes outside of the airport:");
