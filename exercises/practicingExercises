@@ -1,0 +1,14 @@
+//E1
+// 1.1
+
+// Declare a variable of integer type, name it myAge.
+// Assign the variable with your current age.
+// do (a) and (b) as a one-line statement
+
+public class practicingExercises{
+
+public static void main(String[] args) {
+   int myAge = 30;
+ 
+}
+}
