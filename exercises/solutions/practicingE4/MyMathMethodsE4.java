@@ -1,4 +1,10 @@
+import java.util.Scanner;
+
 public class MyMathMethodsE4 {
+
+   
+    Scanner input = new Scanner (System.in);
+
 
     public static int  factorial (int num){
 
@@ -19,22 +25,22 @@ public class MyMathMethodsE4 {
 
                 result = result*i;
 
-            
             }
 
             return result;
         }
         
-
-        
-
-
     }
 
 
     public static void main (String []args){
 
+        
+        
+
         MyMathMethodsE4.factorial(-1);
+
+        MyMathMethodsE4.factorial(0);
 
        
         System.out.println(MyMathMethodsE4.factorial(5));
