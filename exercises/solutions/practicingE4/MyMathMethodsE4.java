@@ -3,8 +3,6 @@ import java.util.Scanner;
 public class MyMathMethodsE4 {
 
    
-    Scanner input = new Scanner (System.in);
-
 
     public static int  factorial (int num){
 
@@ -17,7 +15,8 @@ public class MyMathMethodsE4 {
         
         else if (num < 0){
            System.out.println("The entered number can not be less than zero");
-           return 1;}
+           return num;
+        }
 
 
         else {
@@ -32,18 +31,59 @@ public class MyMathMethodsE4 {
         
     }
 
+    public static int FibonacciE4 (int num) {
+
+        int current =1;
+        int previous=  0;
+        int fibonacci = 0;
+
+
+        if (num <= 0){
+
+            throw new IllegalArgumentException ("input can be zero and less than zero.");
+
+        }
+
+        else if (num == 1 || num ==2 ){
+            return num-1;
+        }
+
+
+        else{
+            for (int i =3 ; i<=num; i++){
+
+                fibonacci = current+previous;
+                previous= current;
+                current =fibonacci;
+
+                
+            }
+            return fibonacci;
+        }
+
+        
+    }
+
 
     public static void main (String []args){
 
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("enter a num to find its factorial");
+
+        int neededFac = input.nextInt();
+
+        System.out.println(factorial(neededFac));
         
+
         
+       System.out.println("enter a num to find its fibonacci");
 
-        MyMathMethodsE4.factorial(-1);
-
-        MyMathMethodsE4.factorial(0);
-
+       int neededFib = input.nextInt();
        
-        System.out.println(MyMathMethodsE4.factorial(5));
+       System.out.println("Fibonacci is "+FibonacciE4(neededFib));
+
+        input.close();
     }
     
 }
