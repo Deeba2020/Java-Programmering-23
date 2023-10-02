@@ -31,6 +31,8 @@ public class MyMathMethodsE4 {
         
     }
 
+
+
     public static int FibonacciE4 (int num) {
 
         int current =1;
@@ -62,6 +64,16 @@ public class MyMathMethodsE4 {
         }
 
         
+    }
+
+    public static boolean isPrimeE4(int num){
+
+        if (num % num == 1 & num %1 == num){
+            
+        }
+
+        return true;
+
     }
 
 
