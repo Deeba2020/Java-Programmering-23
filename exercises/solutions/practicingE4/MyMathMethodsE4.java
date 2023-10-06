@@ -68,13 +68,25 @@ public class MyMathMethodsE4 {
 
     public static boolean isPrimeE4(int num){
 
-        if (num % num == 1 & num %1 == num){
-            
+        boolean prime = true;
+
+        if (num == 1){
+            return false;
+        }
+       
+
+        for (int i = 2 ; i <= num-1 ;i++){
+            if (num % i ==0){
+                return false;
+            }
         }
 
-        return true;
+        return prime;
 
     }
+
+
+
 
 
     public static void main (String []args){
@@ -94,6 +106,12 @@ public class MyMathMethodsE4 {
        int neededFib = input.nextInt();
        
        System.out.println("Fibonacci is "+FibonacciE4(neededFib));
+
+
+
+       System.out.println("write a number to check if its prime");
+       int prime = input.nextInt();
+       System.out.println(isPrimeE4(prime));
 
         input.close();
     }
