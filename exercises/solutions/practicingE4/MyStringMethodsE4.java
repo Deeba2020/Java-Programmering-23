@@ -33,7 +33,19 @@ public class MyStringMethodsE4 {
         return  counter;
     }
 
+    // Write a method called isValidEmail that takes a String parameter representing an email address
+    //  and checks whether it is a valid email format. The method should return true if the email address
+    //   is valid, and false otherwise. Implement the validation logic by checking for the
+    //    presence of an '@' symbol and a valid domain extension (e.g., ".com", ".org", ".edu"). 
+    //    Test your method by calling it with different email addresses and printing the results.
+    // Hint: Make use of the String methods indexOf() and endsWith().
 
+    public static boolean isValidEmail(String email){
+
+        
+
+        return true;
+    }
 
 
     public static void main (String []args){
